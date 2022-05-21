@@ -267,7 +267,10 @@
         - MarkupSafe<2.0.0
         - jinja2==2.11.3
         - Werkzeug==2.0.1
+        - setuptools_scm
+        - urllib3
         - fprime-tools==3.0.1
+        - fprime-fpp==1.0.1
         - fprime-gds==3.0.2
 
 - 
