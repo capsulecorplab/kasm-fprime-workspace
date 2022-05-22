@@ -257,17 +257,21 @@
     apt:
       name: python3-pip
       update_cache: yes
+  - name: Install python packages used as dependencies with pip
+    pip:
+      name:
+        - pint
+        - MarkupSafe<2.0.0
+        - jinja2==2.11.3
+        - Werkzeug==2.0.1
+        - setuptools_scm
+        - urllib3
   - name: Install python packages with pip
     pip:
       name:
         - jupyterlab
         - notebook
         - voila
-        - pint
-        - MarkupSafe<2.0.0
-        - jinja2==2.11.3
-        - Werkzeug==2.0.1
-        - setuptools_scm
         - urllib3
         - fprime-tools==3.0.1
         - fprime-fpp==1.0.1
